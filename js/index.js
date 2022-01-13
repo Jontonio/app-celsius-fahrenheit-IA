@@ -10,7 +10,7 @@ $( document ).ready( () => {
     // cargamos nuestro modelo
     (async () => {
         console.log("Loading IA...");
-        modelo = await tf.loadLayersModel("./model/model.json");
+        modelo = await tf.loadLayersModel("model.json");
         console.log("IA is ready...");
     })();
 
