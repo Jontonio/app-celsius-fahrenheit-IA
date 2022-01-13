@@ -10,7 +10,7 @@ $( document ).ready( () => {
     // cargamos nuestro modelo
     (async () => {
         console.log("Loading IA...");
-        modelo = await tf.loadLayersModel("https://github.com/Jontonio/app-celsius-fahrenheit-IA/blob/main/model.json");
+        modelo = await tf.loadLayersModel("localstorage://model.json");
         console.log("IA is ready...");
     })();
 
