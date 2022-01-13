@@ -31,6 +31,7 @@ $("#input").on("change keyup paste click propertychange mousedown", () => {
         let tensor = tf.tensor1d([parseFloat(celsius)]);
         let prediccion = modelo.predict(tensor).dataSync();
         prediccion = Math.round(prediccion);
+        console.log(prediccion);
         document.getElementById("Fahrenheit").innerHTML = prediccion;
     }
     
